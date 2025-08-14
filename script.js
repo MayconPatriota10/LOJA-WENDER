@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Abrir modal do carrinho
-    cartIcon.addEventListener('click', () => {
+    cartIcon.addEventListener('click', (e) => {
+        e.preventDefault();
         cartModal.style.display = 'flex';
         updateCart();
     });
