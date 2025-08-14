@@ -238,16 +238,18 @@ footer {
         display: block;
     }
 
-    .nav-menu {
+        .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 100%; /* logo abaixo do header */
         left: 0;
         width: 100%;
         background: #4A4A4A;
-        padding: 1rem;
+        padding: 0.25rem 0; /* menos padding vertical */
         z-index: 99;
+        max-height: calc(100vh - 60px); /* limite para evitar rolagem da página */
+        overflow-y: auto; /* rola só dentro do menu se precisar */
     }
 
     .nav-menu.active {
@@ -255,14 +257,15 @@ footer {
     }
 
     .nav-menu li {
-        margin: 0.75rem 0;
+        margin: 0; /* remove espaçamento vertical extra */
     }
 
     .nav-menu li a {
-        font-size: 1.1rem;
-        padding: 0.75rem;
+        font-size: 1rem;
+        padding: 0.5rem; /* reduz espaçamento interno */
         text-align: center;
     }
+
 
     /* Banner */
     .banner {
