@@ -5,10 +5,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     line-height: 1.6;
     color: #333;
     background: #E8ECEF; /* Cinza suave como fundo */
+    display: flex;
+    flex-direction: column;
+}
+
+body > *:not(footer) {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }
 
 /* Cabeçalho */
@@ -238,7 +252,7 @@ footer {
         display: block;
     }
 
-        .nav-menu {
+    .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -265,7 +279,6 @@ footer {
         padding: 0.5rem; /* reduz espaçamento interno */
         text-align: center;
     }
-
 
     /* Banner */
     .banner {
