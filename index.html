@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MM Store - Loja de roupas modernas e estilosas">
-    <title>WM Store - Loja de Roupas</title>
+    <title>MM Store - Loja de Roupas</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="shortcut icon" href="imagens/favicon.jpg" type="image/x-icon">
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -17,7 +16,10 @@
             <h1><span class="logo-m1">M</span><span class="logo-m2">M</span> STORE</h1>
         </div>
         <nav>
-            <ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contato</a></li>
@@ -29,9 +31,9 @@
     <!-- Banner Principal -->
     <section id="home" class="banner">
         <div class="banner-content">
-            <h2>WM Store: Viva seu Estilo!</h2>
+            <h2>MM Store: Viva seu Estilo!</h2>
             <p>Crie looks únicos com energia e atitude</p>
-            <a href="#" class="btn">Explorar Agora</a>
+            <a href="#about" class="btn">Explorar Agora</a>
         </div>
     </section>
 
@@ -64,7 +66,7 @@
             <h2>Seu Carrinho</h2>
             <div id="cart-items"></div>
             <p>Total: R$ <span id="cart-total">0.00</span></p>
-            <button id="checkout-btn">Finalizar Compras</button>
+            <button id="checkout-btn">Finalizar Compra</button>
         </div>
     </div>
 

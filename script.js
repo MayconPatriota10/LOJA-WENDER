@@ -7,6 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutBtn = document.getElementById('checkout-btn');
     const contactLink = document.querySelector('a[href="#contact"]');
     const socialIcons = document.querySelectorAll('.social-icon');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    // Abrir/fechar menu hamburguer
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+    });
 
     // Abrir modal do carrinho
     cartIcon.addEventListener('click', () => {
