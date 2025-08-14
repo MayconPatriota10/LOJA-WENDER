@@ -1,2 +1,0 @@
-# LOJA-WENDER
-
