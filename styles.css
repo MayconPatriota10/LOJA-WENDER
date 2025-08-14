@@ -248,35 +248,34 @@ footer {
         padding: 0.5rem 1rem;
     }
 
+    /* Remove hambúrguer no mobile */
     .hamburger {
-        display: block;
+        display: none;
+    }
+
+    /* Oculta opções e deixa só carrinho */
+    .nav-menu .menu-item {
+        display: none;
     }
 
     .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* logo abaixo do header */
-        left: 0;
-        width: 100%;
-        background: #4A4A4A;
-        padding: 0.25rem 0; /* menos padding vertical */
-        z-index: 99;
-        max-height: calc(100vh - 60px); /* limite para evitar rolagem da página */
-        overflow-y: auto; /* rola só dentro do menu se precisar */
-    }
-
-    .nav-menu.active {
-        display: flex;
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        background: none;
+        padding: 0;
+        max-height: none;
+        overflow: visible;
+        gap: 0;
     }
 
     .nav-menu li {
-        margin: 0; /* remove espaçamento vertical extra */
+        margin: 0;
     }
 
     .nav-menu li a {
         font-size: 1rem;
-        padding: 0.5rem; /* reduz espaçamento interno */
+        padding: 0.5rem;
         text-align: center;
     }
 
